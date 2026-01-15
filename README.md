@@ -1,7 +1,12 @@
 # osTicket - Prerequisites and Installation
 
-This tutorial provides a step-by-step walkthrough of the prerequisites and installation process for **osTicket**, an open-source help desk ticketing system commonly used in IT support environments. This project demonstrates hands-on experience with system administration, web server configuration, and help desk software deployment in a cloud environment.
+This tutorial provides a step-by-step walkthrough of the prerequisites and installation process for **osTicket**, an open-source help desk ticketing system widely used in IT support environments. This project demonstrates hands-on experience with cloud virtual machines, IIS web server configuration, and help desk ticketing system deployment.
 
+---
+
+
+
+---
 
 ## Environments and Technologies Used
 - Microsoft Azure (Virtual Machines / Compute)
@@ -21,10 +26,10 @@ This tutorial provides a step-by-step walkthrough of the prerequisites and insta
 ## List of Prerequisites
 - Microsoft Azure subscription
 - Windows 10 Virtual Machine
-- Internet Information Services (IIS) enabled
-- PHP (v7.4 or compatible)
-- MySQL Database Server
+- Internet Information Services (IIS)
+- PHP 7.4
 - PHP Manager for IIS
+- MySQL Server
 - osTicket installation files
 
 ---
@@ -34,45 +39,22 @@ This tutorial provides a step-by-step walkthrough of the prerequisites and insta
 ### Step 1: Create and Access Azure Virtual Machine
 - Created a Windows 10 Virtual Machine in Microsoft Azure
 - Connected to the VM using Remote Desktop (RDP)
-- Verified internet connectivity and system updates
+- Verified successful login and system readiness
 
-(images/azure-vm-setup.png)
+📸 **Screenshot to Upload**
+- **File name:** `azure-vm-overview.png`
+- **What to capture:** Azure portal showing VM name, status = Running
 
----
-
-### Step 2: Enable IIS and Required Features
-- Enabled **Internet Information Services (IIS)** through Windows Features
-- Installed required IIS components:
-  - CGI
-  - Common HTTP Features
-  - Application Development Features
-
-![IIS Installation](images/iis-installation.png)
+![Azure VM Overview](images/azure-vm-overview.png)
 
 ---
 
-### Step 3: Install PHP and PHP Manager
-- Installed PHP Manager for IIS
-- Installed PHP 7.4
-- Configured PHP within IIS Manager
-- Enabled required PHP extensions:
-  - php_imap.dll
-  - php_intl.dll
-  - php_opcache.dll
+### Step 2: Remote Desktop Connection
+- Connected to the virtual machine via Remote Desktop
+- Logged in using administrator credentials
 
-![PHP Configuration](images/php-config.png)
+📸 **Screenshot to Upload**
+- **File name:** `rdp-login.png`
+- **What to capture:** Windows 10 desktop inside the VM
 
----
-
-### Step 4: Install and Configure MySQL
-- Installed MySQL Server
-- Created a database for osTicket
-- Created a database user with appropriate permissions
-
-![MySQL Setup](images/mysql-setup.png)
-
----
-
-### Step 5: Download and Configure osTicket
-- Downloaded osTicket from the official website
-- Extracted files to:
+![RDP Login](images/

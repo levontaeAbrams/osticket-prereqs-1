@@ -1,55 +1,78 @@
-<p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
-</p>
+# osTicket - Prerequisites and Installation
 
-<h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+This tutorial provides a step-by-step walkthrough of the prerequisites and installation process for **osTicket**, an open-source help desk ticketing system commonly used in IT support environments. This project demonstrates hands-on experience with system administration, web server configuration, and help desk software deployment in a cloud environment.
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
-
-<h2>Environments and Technologies Used</h2>
-
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
+## Environments and Technologies Used
+- Microsoft Azure (Virtual Machines / Compute)
+- Remote Desktop Protocol (RDP)
 - Internet Information Services (IIS)
+- PHP Manager for IIS
+- MySQL
+- osTicket
 
-<h2>Operating Systems Used </h2>
+---
 
-- Windows 10</b> (21H2)
+## Operating Systems Used
+- Windows 10 (21H2)
 
-<h2>List of Prerequisites</h2>
+---
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+## List of Prerequisites
+- Microsoft Azure subscription
+- Windows 10 Virtual Machine
+- Internet Information Services (IIS) enabled
+- PHP (v7.4 or compatible)
+- MySQL Database Server
+- PHP Manager for IIS
+- osTicket installation files
 
-<h2>Installation Steps</h2>
+---
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+## Installation Steps
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+### Step 1: Create and Access Azure Virtual Machine
+- Created a Windows 10 Virtual Machine in Microsoft Azure
+- Connected to the VM using Remote Desktop (RDP)
+- Verified internet connectivity and system updates
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+![Azure VM Setup](images/azure-vm-setup.png)
+
+---
+
+### Step 2: Enable IIS and Required Features
+- Enabled **Internet Information Services (IIS)** through Windows Features
+- Installed required IIS components:
+  - CGI
+  - Common HTTP Features
+  - Application Development Features
+
+![IIS Installation](images/iis-installation.png)
+
+---
+
+### Step 3: Install PHP and PHP Manager
+- Installed PHP Manager for IIS
+- Installed PHP 7.4
+- Configured PHP within IIS Manager
+- Enabled required PHP extensions:
+  - php_imap.dll
+  - php_intl.dll
+  - php_opcache.dll
+
+![PHP Configuration](images/php-config.png)
+
+---
+
+### Step 4: Install and Configure MySQL
+- Installed MySQL Server
+- Created a database for osTicket
+- Created a database user with appropriate permissions
+
+![MySQL Setup](images/mysql-setup.png)
+
+---
+
+### Step 5: Download and Configure osTicket
+- Downloaded osTicket from the official website
+- Extracted files to:

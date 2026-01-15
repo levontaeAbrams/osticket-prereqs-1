@@ -36,7 +36,7 @@ This tutorial provides a step-by-step walkthrough of the prerequisites and insta
 - Connected to the VM using Remote Desktop (RDP)
 - Verified internet connectivity and system updates
 
-![Azure VM Setup](images/azure-vm-setup.png)
+(images/azure-vm-setup.png)
 
 ---
 

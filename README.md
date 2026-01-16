@@ -34,7 +34,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Step 1: Create and Access the Virtual Machine
+A Windows 10 virtual machine is created in Microsoft Azure with sufficient resources (4 vCPUs). The VM is placed in a dedicated resource group and accessed using Remote Desktop. This virtual machine serves as the environment where osTicket and all required services will be installed and configured.
 </p>
 <br />
 
@@ -42,7 +43,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Step 2: Configure the Web Server and Dependencies
+Internet Information Services (IIS) is installed and configured with CGI enabled to support PHP applications. Required components such as PHP, PHP Manager for IIS, the IIS Rewrite Module, Visual C++ Redistributable, and MySQL are installed. PHP is registered within IIS, and necessary PHP extensions are enabled to ensure osTicket can run properly.
 </p>
 <br />
 
@@ -50,6 +52,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Step 3: Install, Configure, and Secure osTicket
+The osTicket application files are deployed to the IIS web root directory and configured for use. File permissions are set, configuration files are renamed, and the web-based installer is completed to define the help desk name, database connection, and administrative settings. Once installation is complete, the setup directory is removed, configuration files are locked down, and both the admin and end-user portals are tested to confirm the system is fully operational and secure.
 </p>
 <br />
